@@ -113,6 +113,17 @@ $().ready(()=>
             $('#fileTable').css("display", "none");
         })
     })
+
+    $('.uniqueSquare').click((evt)=>
+    {
+        console.log("here")
+        $(evt.currentTarget).parents('.articleCard').attr("id", "fullPageCard")
+    })
+
+    $('.backBtn2').click((evt)=>
+    {
+        $('#fullPageCard').removeAttr("id")
+    })
 })
 
 $(window).ready(()=>

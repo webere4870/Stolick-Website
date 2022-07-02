@@ -14,7 +14,7 @@
     --lightBackground: #393E46;
     --accent1: #6610f2;
     --accentGradient: rgba(86, 78, 204, 0.6);
-    --darkGradient: #2329216f;
+    --darkGradient: #23292193;
     --darkAccent: #40a784;
     --accent2: #EEEEEE;
     --custom1: #62fcaf;
@@ -604,19 +604,97 @@ flex-wrap: wrap;
     border-radius: 15px;
     background: white;
     box-shadow: 0 0 10px gray;
-    position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: all .3s linear;
+}
+
+#fullPageCard
+{
+
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0px;
+    z-index: 5;
+}
+
+.hiddenContent
+{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#fullPageCard .hiddenContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px ); */
+}
+
+#fullPageCard .squareBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.squareBtn p{
+    margin: 0p 5px;
+}
+
+#fullPageCard .pDate
+{
+    display: none;
+}
+
+#fullPageCard .topAC
+{
+    height: 100%;
+    width: 100%;
+}
+
+#fullPageCard .bottomAC
+{
+    display: none;
+}
+
+.articleCard .relative{
+    height: 100%;
+    width: 100%;
 }
 
 .articleCard:hover{
     box-shadow: 0 0 14px gray;
 }
 
+button{
+    transition: all .3s linear;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.articleCard .squareBtn:hover{
+    box-shadow: 0 0 10px gray;
+}
+
 .articleCard .squareBtn
 {
     margin-top: 10px;
+}
+
+#fullPageCard
+{
+    height: 100vh;
+    width: 100vw;
 }
 
 .topAC
@@ -678,6 +756,7 @@ flex-wrap: wrap;
     text-align: center;
     margin: 0 3px;
 }
+
 
 .authorRow{
     display: flex;
