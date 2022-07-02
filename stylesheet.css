@@ -149,7 +149,6 @@ body
     background: var(--mainBackground);
     height: 70vh;
     width: 100vw;
-    position: relative;
 }
 
 #booksFollow
@@ -606,16 +605,14 @@ flex-wrap: wrap;
     box-shadow: 0 0 10px gray;
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: all .3s linear;
 }
 
 #fullPageCard
 {
-
+    transition: all 1s linear;
     height: 100vh;
     width: 100vw;
     border-radius: 0px;
-    z-index: 5;
 }
 
 .hiddenContent
@@ -1875,7 +1872,7 @@ a
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .teachingRow2{

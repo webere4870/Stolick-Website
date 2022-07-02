@@ -117,12 +117,36 @@ $().ready(()=>
     $('.uniqueSquare').click((evt)=>
     {
         console.log("here")
-        $(evt.currentTarget).parents('.articleCard').attr("id", "fullPageCard")
+        $(evt.currentTarget).parents('.articleCard').siblings().slideToggle(1000)
+        setTimeout(()=>
+        {
+            $(evt.currentTarget).parents('.articleCard').attr("id", "fullPageCard")
+        }, 1200)
     })
 
     $('.backBtn2').click((evt)=>
     {
+        let counter = 0;
+        let official = 0;
+        for(let temp of document.querySelectorAll('.articleCard'))
+        {
+            if(temp.id == "fullPageCard")
+            {
+                official = counter
+            }
+            counter++
+        }
+        $(`.articleCard:nth-of-type(${official + 1})`).css("transition", "all 1s linear")
         $('#fullPageCard').removeAttr("id")
+        setTimeout(()=>
+        {
+            $(evt.currentTarget).parents('.articleCard').siblings().slideToggle(1000)
+        }, 2000)
+        setTimeout(()=>
+        {
+            $(`.articleCard:nth-of-type(${official + 1})`).css("transition", "unset")
+        }, 1000)
+        
     })
 })
 
