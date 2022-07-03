@@ -496,10 +496,11 @@ body
 }
 
 
-.wrapper1{
-	width:600px;
+.wrapper1
+{
+	width:100vw;
 	margin:50px auto;
-	height:400px;
+	height:100vh;
 	position:relative;
 	color:#fff;
 	text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;	
@@ -512,22 +513,22 @@ body
 }
 
 #slider-wrap{
-	width:600px;
-	height:400px;
+	width:100vw;
+	height:100vh;
 	position:relative;
 	overflow:hidden;
 }
 
 #wrapperResize #slider-wrap{
-	width:600px;
-	height:400px;
+	width:100vw;
+	height:100vh;
 	position:relative;
 	overflow:hidden;
 }
 
 #slider-wrap ul#slider{
-	width: 600px;
-	height:400px;
+	width: 100vw;
+	height:100vh;
 	position:absolute;
 	top:0;
 	left:0;		
@@ -536,33 +537,11 @@ body
 #slider-wrap ul#slider li{
 	float:left;
 	position:relative;
-	width:600px;
-	height:400px;	
+	width:100vw;
+	height:100vh;	
 }
 
-#slider-wrap ul#slider li > div{
-	position:absolute;
-	top:20px;
-	left:35px;	
-}
 
-#slider-wrap ul#slider li > div h3{
-	font-size:36px;
-	text-transform:uppercase;	
-}
-
-#slider-wrap ul#slider li > div span{
-	font-family: Neucha, Arial, sans serif;
-	font-size:21px;
-}
-
-#slider-wrap ul#slider li i{
-	text-align:center;
-	line-height:400px;
-	display:block;
-	width:100%;
-	font-size:90px;	
-}
 
 
 /*btns*/
@@ -1209,8 +1188,8 @@ color: #545d7a;
 
 .course
 {
-    width: 600px;
-    height: 200px;
+    width: 100vw;
+    height: 100vh;
     border-radius: 20px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
