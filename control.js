@@ -1,7 +1,37 @@
 $().ready(()=>
 {
 
-    
+    function scaleTower()
+    {
+        let id = $('.mover:nth-of-type(3)').attr("id")
+        let newValue = ""
+        for(let counter = 0; counter < id.length; counter++)
+        {
+            if(Number.isInteger(parseInt(id[counter])))
+            {
+                newValue += id[counter]
+            }
+        }
+        $("#scaleTower").attr("id", "")
+        $(`.tower:nth-of-type(${newValue})`).attr("id", "scaleTower")
+    }
+
+    let lastRemoved = $("<div id='block6' class='mover'></div>")
+    $('#clickerLeft').click((evt)=>
+    {
+        $('#biggerBoy').prepend(lastRemoved)
+        lastRemoved = $('.mover:last-of-type')
+        $('.mover:last-of-type').remove()
+        scaleTower()
+    })
+    $('#clicker').click((evt)=>
+    {
+        let temp = $('.mover:nth-of-type(1)')
+        $('.mover:nth-of-type(1)').remove()
+        $('#biggerBoy').append(lastRemoved)
+        scaleTower()
+        lastRemoved = temp
+    })
 
     $('.hamburger').on('click',(evt)=>
     {

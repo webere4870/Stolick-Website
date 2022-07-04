@@ -15,7 +15,7 @@
     --lightBackground: #393E46;
     --accent1: #6610f2;
     --accentGradient: rgba(86, 78, 204, 0.6);
-    --darkGradient: #23292193;
+    --darkGradient: #212229b2;
     --darkAccent: #40a784;
     --accent2: #EEEEEE;
     --custom1: #62fcaf;
@@ -317,7 +317,12 @@ body
     transition-property: all;
 }
 
-
+.yellowBtn{
+    padding: 10px 20px;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+    border: 2px solid white;
+    color: white;
+}
 
 .subBlock .squareBtn
 {
@@ -381,6 +386,25 @@ body
     align-items: center;
     flex-direction: column;
     padding: 0 0 40px 0;
+
+}
+
+#floatBlock
+{
+    background: var(--mainBackground);
+    min-height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+}
+
+#floatBlock a
+{
+    color: var(--accent1);
 }
 
 #whiteFollow h1{
@@ -458,6 +482,173 @@ body
     position: relative;
 }
 
+#ethicsTop
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgba(0,0,0,.4), var(--mainBackground)), url('./images/study.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+#biggerBoy
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: all .3s linear;
+    overflow: hidden;
+}
+
+.mover{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    transition: all .5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mover:nth-of-type(1)
+{
+    position: absolute;
+    left: 0;
+    top: -200vw;
+}
+.mover:nth-of-type(2)
+{
+    position: absolute;
+    top: 0;
+    left: -100vw;
+}
+
+.mover:nth-of-type(3)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mover:nth-of-type(4)
+{
+    position: absolute;
+    top: 0;
+    left: 100vw;
+}
+
+.mover:nth-of-type(5)
+{
+    position: absolute;
+    top: 0;
+    left: 200vw;
+}
+
+.slideClick{
+    z-index: 3;
+}
+
+#towerRow
+{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    gap: 10px;
+}
+
+.tower{
+    width: 5px;
+    height: 15px;
+    border-radius: 5px;
+    background: white;
+    transition: all .3s linear;
+}
+
+#scaleTower{
+    transform: scaleY(200%);
+}
+
+#block1
+{
+    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#block2
+{
+    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#block3
+{
+    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#block4
+{
+    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#block5
+{
+    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#block6
+{
+    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#clicker
+{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+#clickerLeft{
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+
+
+#ethicsSlider
+{
+    height: 100vh;
+    width: 300vw;
+    position: absolute;
+}
 
 #ethicsPage1
 {
@@ -2017,6 +2208,10 @@ a
     left:15%;
     filter: blur(1px);
     animation: shadow .5s alternate infinite ease;
+}
+
+#floatBlock h1, p{
+    color: white;
 }
 
 #teachingPage
