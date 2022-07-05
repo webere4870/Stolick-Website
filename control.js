@@ -20,6 +20,8 @@ $().ready(()=>
     $('#clickerLeft').click((evt)=>
     {
         $('#biggerBoy').prepend(lastRemoved)
+        $('.ssContainer > *').addClass("transformed")
+        $('.ssContainer:nth-of-type(3) > *').removeClass("transformed")
         lastRemoved = $('.mover:last-of-type')
         $('.mover:last-of-type').remove()
         scaleTower()
