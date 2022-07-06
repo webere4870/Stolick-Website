@@ -61,6 +61,44 @@ body
     position: relative;
 }
 
+#homeFollow
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(var(--accent1),var(--accentGradient));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#centerCircle
+{
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    bottom: -300px;
+    right: -150px;
+}
+
+#innerCircle
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+#innerCircle img{
+    height: 70%;
+    position: absolute;
+    top: -15%;
+    left: -15%;
+}
+
 #extraPage
 {
     display: flex;
@@ -114,7 +152,6 @@ body
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
 }
 
 #topper
@@ -536,8 +573,8 @@ body
     left: 0;
 }
 
-.mover.mover:nth-of-type(3) .ssContainer > *{
-    transition: all .4s linear;
+.ssContainer > *{
+    transition: all .84s linear;
 }
 
 .mover:nth-of-type(4)
@@ -1366,11 +1403,10 @@ color: #545d7a;
     height: 60px;
     width: 100%;
     position: absolute;
+    background: rgba(0,0,0,0);
     top: 0;
     left: 0;
     z-index: 2;
-    background: var(--accent1);
-    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 
 #courseContent
@@ -1732,18 +1768,13 @@ a
 .dropDownMenu
 {
     position: absolute;
-    top: 160%;
+    top: 120%;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     display: none;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 0 15px gray;
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
-    padding: 10px;
     z-index: 0;
 }
 
@@ -1819,12 +1850,10 @@ a
     transition-timing-function: linear;
     transition-duration: .3s;
     transition-property: all;
+    color: white;
 }
 
-.navigation a:hover
-{
-    color: black;
-}
+
 
 .hamburger i
 {
@@ -2408,7 +2437,10 @@ a
     color: #fff;
     left:15%;
 }
-
+.navigation a:hover
+{
+    color: var(--accent1);
+}
 #slideShowRow
 {
     display: flex;
