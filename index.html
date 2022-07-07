@@ -15,10 +15,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
     <title>Document</title>
+    <style>
+        .homeLetters
+        {
+            font-family: 'DM Sans', sans-serif;
+            color: white;
+            font-size: 60px;
+        }
+    </style>
 </head>
 <body>
     <div class="preloader">
@@ -112,16 +123,13 @@
             <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
           </svg>
     </div>
-    <div id="homePage">
+    <!-- <div id="homePage">
         <div class="rowFlex" style="align-items: flex-end;">
             <h1 class="upright">Stolick <br> <span class="offColor">Philosophy</span></h1>
             <p class="quoteClass">I think. <br> Therefore I am. <br>
                 Cogito, ergo sum <br> &mdash; Descartes </p>
         </div>
-        <div class="rowFlex btnRow">
-            <div class="btn btn1">About Me</div>
-            <div class="btn btn2 openForm">Contact</div>
-        </div>
+        
         <div id="iconRow">
             <a class="iconBubble">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-quora" viewBox="0 0 16 16">
@@ -140,8 +148,32 @@
             </a>
             
         </div>
-    </div>
+    </div> -->
     <div id="homeFollow">
+        <div class="rowFlex btnRow">
+            <div class="btn btn1">About Me</div>
+            <div class="btn btn2 openForm">Contact</div>
+        </div>
+        <div class="rowFlex" style="align-items: flex-start;">
+            <h1 class="homeLetters upright">
+                Stolick
+            </h1>
+            <div class="underQuote" style="align-items: flex-start;">
+                <h1 class="homeLetters" style="margin-top: -20px;">
+                    Matthew
+                </h1>
+                <p>The best defense against hypocrisy is love; yes, it is not only a defense but a yawning abyss; in all eternity it has nothing to do with hypocrisy. This also is a fruit whereby love is known--it secures the lover against falling into the snare of the hypocrite.</p>
+                <br>
+                <p style="font-style: italic;">--Soren Kierkegaard Works of Love</p>
+                <div>
+                <div class="homePills">
+                    <button class="homePillBtn">Howdy</button>
+                    <button class="homePillBtn">HeyNate</button>
+                </div>
+            </div>
+            </div>
+            
+        </div>
         <div id="centerCircle">
             <div id="innerCircle">
                 <img src="./images/busy-project-manager-overwhelmed-by-work.png" alt="">

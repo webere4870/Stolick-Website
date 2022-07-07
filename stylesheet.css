@@ -68,9 +68,11 @@ body
     background: linear-gradient(var(--accent1),var(--accentGradient));
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
+    padding-left: 10%;
 }
 
 #centerCircle
@@ -1535,6 +1537,24 @@ color: #545d7a;
     margin-top: 10px;
 }
 
+.homePillBtn
+{
+    border: none;
+    color: var(--accent1);
+    background: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.homePills
+{
+    display: flex;
+    margin-top: 20px;
+}
+
 .coursePillBtn:hover{
     box-shadow: 0 0 12px gray;
 }
@@ -2048,6 +2068,11 @@ a
 {
     font-size: 40px;
     font-style: italic;
+}
+
+.underQuote p
+{
+    width: 35%;
 }
 
 .iconBubble
