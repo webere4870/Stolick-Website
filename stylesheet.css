@@ -14,8 +14,9 @@
     --mainGradient: rgba(35,41,49, .7);
     --lightBackground: #393E46;
     --accent1: #6610f2;
+    --darkAccentGradient: #6710f2c5;
     --babyBlue: rgb(0, 149, 255);
-    --accentGradient: rgba(86, 78, 204, 0.6);
+    --accentGradient: rgba(86, 78, 204, 0.553);
     --darkGradient: #212229b2;
     --darkAccent: #40a784;
     --accent2: #EEEEEE;
@@ -100,6 +101,13 @@ body
 {
     font-family: 'DM Sans', sans-serif;
     color: white;
+    font-size: 60px;
+}
+
+.homeLetters2
+{
+    font-family: 'DM Sans', sans-serif;
+    color: var(--accent1);
     font-size: 60px;
 }
 
@@ -224,7 +232,7 @@ body
     background: white;
     min-height: 30vh;
     width: 100vw;
-    box-shadow: 0 0 20px gray;
+
     transform: translateY(-20px);
 }
 
@@ -571,16 +579,41 @@ body
     position: relative;
     transition: all .3s linear;
     overflow: hidden;
+    background: white;
+}
+
+#svgWrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
 }
 
 .mover{
     height: 100vh;
     width: 100vw;
-    border: 1px solid black;
     transition: all .5s linear;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 15%;
+    z-index: 10;
+}
+
+.mover p{
+    color: var(--accent1);
+    font-size: 16px;
+}
+
+
+.mover > *
+{
+    transition: all .3s linear;
+    transform: translateY(200px);
 }
 
 .mover:nth-of-type(1)
@@ -603,6 +636,11 @@ body
     left: 0;
 }
 
+.mover:nth-last-of-type(3) > *
+{
+    transform: translateY(0);
+}
+
 .ssContainer > *{
     transition: all .84s linear;
 }
@@ -622,7 +660,7 @@ body
 }
 
 .slideClick{
-    z-index: 3;
+    z-index: 13;
 }
 
 #towerRow
@@ -715,9 +753,9 @@ body
 }
 
 
-#block1
+/* #block1
 {
-    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background: linear-gradient(var(--darkAccentGradient), var(--accentGradient)), url('/images/study.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -725,7 +763,7 @@ body
 
 #block2
 {
-    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background: linear-gradient(var(--darkAccentGradient), var(--accentGradient)), url('/images/study.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -733,7 +771,7 @@ body
 
 #block3
 {
-    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background: linear-gradient(var(--darkAccentGradient), var(--accentGradient)), url('/images/study.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -741,7 +779,7 @@ body
 
 #block4
 {
-    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background: linear-gradient(var(--darkAccentGradient), var(--accentGradient)), url('/images/study.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -749,7 +787,7 @@ body
 
 #block5
 {
-    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background: linear-gradient(var(--darkAccentGradient), var(--accentGradient)), url('/images/study.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -757,11 +795,11 @@ body
 
 #block6
 {
-    background: linear-gradient(var(--darkGradient), var(--darkGradient)), url('/images/study.jpeg');
+    background: linear-gradient(var(--darkAccentGradient), var(--accentGradient)), url('/images/study.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 
 #clicker
@@ -1582,6 +1620,11 @@ color: #545d7a;
     display: flex;
 }
 
+.homePillBtn:hover
+{
+    cursor: pointer;
+}
+
 .coursePillBtn:hover{
     box-shadow: 0 0 12px gray;
 }
@@ -1723,6 +1766,16 @@ color: #545d7a;
     width: 200px;
     background: green;
     border: 2px solid black;
+}
+
+.slideBlock
+{
+    /* background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px ); */
+    border-radius: 10px;
+    z-index: 1;
 }
 
 #topper svg{
