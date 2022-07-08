@@ -14,6 +14,7 @@
     --mainGradient: rgba(35,41,49, .7);
     --lightBackground: #393E46;
     --accent1: #6610f2;
+    --babyBlue: rgb(0, 149, 255);
     --accentGradient: rgba(86, 78, 204, 0.6);
     --darkGradient: #212229b2;
     --darkAccent: #40a784;
@@ -71,8 +72,34 @@ body
     align-items: flex-start;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
     padding-left: 10%;
+    box-shadow: 0 0 20px gray;
+}
+
+#homeRow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+#homeFollow2
+{
+    background: white;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeLetters
+{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-size: 60px;
 }
 
 #centerCircle
@@ -1552,7 +1579,6 @@ color: #545d7a;
 .homePills
 {
     display: flex;
-    margin-top: 20px;
 }
 
 .coursePillBtn:hover{
@@ -1924,7 +1950,7 @@ a
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
@@ -2051,6 +2077,8 @@ a
     transition-timing-function: linear;
     transition-duration: .3s;
     font-size: 20px;
+    color: var(--accent1);
+    font-weight: bolder;
 }
 
 .mobileNavigationSub > a:hover
@@ -2464,7 +2492,10 @@ a
 }
 .navigation a:hover
 {
-    color: var(--accent1);
+    transform: translateY(-3px);
+}
+.dropDownMenu a:hover{
+    transform: unset;
 }
 #slideShowRow
 {
@@ -2706,6 +2737,24 @@ a
 
 @media screen and (max-width: 1024px)
 {
+    .hamburger
+    {
+        display: flex;
+    }
+    .navigation
+    {
+        display: none;
+    }
+    #centerCircle
+    {
+        height: 600px;
+        width: 600px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        bottom: -300px;
+        right: -150px;
+    }
     .teachingCard{
         height: 200px;
         width: 200px;
@@ -2716,8 +2765,48 @@ a
     }
 }
 
+@media screen and (max-width: 840px)
+{
+    #centerCircle
+    {
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        bottom: -300px;
+        right: -150px;
+    }
+}
+
 @media screen and (max-width: 768px)
 {
+    #homeFollow
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 25%;
+    }
+    .underQuote p{
+        width: 90%;
+    }
+    .homeLetters
+    {
+        font-size: 40px;
+    }
+    #centerCircle
+    {
+        height: 600px;
+        width: 600px;
+        bottom: -500px;
+        right: -100px;
+    }
+    #innerCircle img{
+        height: 50%;
+        position: absolute;
+        top: -26%;
+        left: 35%;
+    }
     #shifty{
         gap: 0;
     }
@@ -2829,19 +2918,10 @@ a
         right: 0;
         margin-top: 15px;
     }
-    .navigation
-    {
-        display: none;
-    }
 
     #materialsPage
     {
         margin-top: 0;
-    }
-
-    .hamburger
-    {
-        display: flex;
     }
 
     .course
@@ -2874,7 +2954,9 @@ a
     }
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 501px)
 {
-    
+    #innerCircle img{
+        left: 30%;
+    }
 }
