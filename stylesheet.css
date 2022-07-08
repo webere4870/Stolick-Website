@@ -73,7 +73,8 @@ body
     flex-direction: column;
     position: relative;
     padding-left: 10%;
-    box-shadow: 0 0 20px gray;
+    overflow: hidden;
+
 }
 
 #homeRow
@@ -185,7 +186,7 @@ body
 
 #topper
 {
-    background: var(--accent1);
+    background: linear-gradient(var(--accent1),var(--accentGradient));
     min-height: 50vh;
     width: 100vw;
 }
@@ -213,7 +214,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--mainBackground);
+    background: linear-gradient(var(--accent1),var(--accentGradient));
     height: 70vh;
     width: 100vw;
 }
@@ -223,7 +224,7 @@ body
     background: white;
     min-height: 30vh;
     width: 100vw;
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px gray;
     transform: translateY(-20px);
 }
 
