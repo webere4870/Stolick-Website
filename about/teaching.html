@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheet.css">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -113,40 +116,79 @@
           </svg>
     </div>
     <div id="teachingPage" class="colFlex pageFlex">
-        <h1 class="afterUnderline" style="margin-bottom: 40px; margin-top: 30px;">Teaching Style</h1>
-        <div class="teachingRow">
-            <div class="teachingCard">
-                <h1 >Stuff 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam ut fuga reiciendis, ipsam enim.</p>
-                    <button class="pillBtn">Stuffer</button>
-                <div class="stripe">
+        <div class="svgTop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6610f2" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,218.7C384,235,480,213,576,186.7C672,160,768,128,864,133.3C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </div>
+        <div class="rowFlex">
+            <div class="progressDisplays">
+                <div id="circleG">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
                 </div>
-            </div>
-            <div class="teachingArrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                  </svg>
-            </div>
-            <div class="teachingCard">
-                <h1 >Stuff 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam ut fuga reiciendis, ipsam enim.</p>
-                    <button class="pillBtn">Stuffer</button>
-                <div class="stripe">
-                </div>
-            </div>
-            <div class="teachingArrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                  </svg>
-            </div>
-            <div class="teachingCard">
-                <h1 >Stuff 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam ut fuga reiciendis, ipsam enim.</p>
-                    <button class="pillBtn">Stuffer</button>
-                <div class="stripe">
+                <div class="progressSide">
+                    <h1 class="homeLetters2">heyo</h1>
                 </div>
             </div>
         </div>
+        <div id="progressContainer">
+            <div class="colFlex">
+                <div class="stepUnit" id="su1">
+                    <h2>1</h2>
+                </div>
+            </div>
+            <div class="betweenLine"></div>
+            <div class="colFlex">
+                <div class="stepUnit" id="su2">
+                    <h2>2</h2>
+                </div>
+            </div>
+            <div class="betweenLine"></div>
+            <div class="colFlex">
+                <div class="stepUnit" id="su2">
+                    <h2>3</h2>
+                </div>
+            </div>
+            <div class="betweenLine"></div>
+            <div class="colFlex">
+                <div class="stepUnit" id="su2">
+                    <h2>4</h2>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="teachingRow">
+            <div class="teachingCard">
+                <h1 >Stuff 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam ut fuga reiciendis, ipsam enim.</p>
+                    <button class="pillBtn">Stuffer</button>
+                <div class="stripe">
+                </div>
+            </div>
+            <div class="teachingArrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+            </div>
+            <div class="teachingCard">
+                <h1 >Stuff 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam ut fuga reiciendis, ipsam enim.</p>
+                    <button class="pillBtn">Stuffer</button>
+                <div class="stripe">
+                </div>
+            </div>
+            <div class="teachingArrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+            </div>
+            <div class="teachingCard">
+                <h1 >Stuff 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam ut fuga reiciendis, ipsam enim.</p>
+                    <button class="pillBtn">Stuffer</button>
+                <div class="stripe">
+                </div>
+            </div>
+        </div> -->
         <div class="rowFlex btnRow">
             <div class="btn btn1">About Me</div>
             <div class="btn btn2 openForm">Contact</div>
