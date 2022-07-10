@@ -29,6 +29,33 @@ $().ready(()=>
     <button class="homePillBtn" style="box-shadow: 0 0 10px gray; margin-left: 0;" >Read More</button>
 </div>`
 
+    $('#su1').click((evt)=>
+    {
+        $('.progressDisplays').css("display", "none")
+        $('#teachingPage .jFix > div:nth-of-type(1)').fadeToggle(700)
+        $('#teachingPage .jFix > div:nth-of-type(1)').css("display", "flex")
+    })
+    $('#su2').click((evt)=>
+    {
+        $('.progressDisplays').css("display", "none")
+        $('#teachingPage .jFix > div:nth-of-type(2)').fadeToggle(700)
+        $('#teachingPage .jFix > div:nth-of-type(2)').css("display", "flex")
+
+    })
+    $('#su3').click((evt)=>
+    {
+        $('.progressDisplays').css("display", "none")
+        $('#teachingPage .jFix > div:nth-of-type(3)').fadeToggle(700)
+        $('#teachingPage .jFix > div:nth-of-type(3)').css("display", "flex")
+    })
+    $('#su4').click((evt)=>
+    {
+        console.log(evt.currentTarget)
+        $('.progressDisplays').css("display", "none")
+        $('#teachingPage .jFix > div:nth-of-type(4)').fadeToggle(700)
+        $('#teachingPage .jFix > div:nth-of-type(4)').css("display", "flex")
+    })
+
     let lastRemoved = $("<div id='block6' class='mover'>"+ string + "</div>")
     $('#clickerLeft').click((evt)=>
     {
