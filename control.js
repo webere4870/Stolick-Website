@@ -29,6 +29,12 @@ $().ready(()=>
     <button class="homePillBtn" style="box-shadow: 0 0 10px gray; margin-left: 0;" >Read More</button>
 </div>`
 
+    $('.homePillBtn').click((evt)=>
+    {
+        console.log("djsa")
+        $('#svgWrap svg').animate({height: "180vh"}, 500).animate({height: "160vh"}, 250)
+    })
+
     $('#su1').click((evt)=>
     {
         $('.progressDisplays').css("display", "none")
@@ -103,6 +109,7 @@ $().ready(()=>
     })
 
 
+
     $('.xBtn').click((evt)=>
     {
         $('.xBtn').toggle(400)
@@ -130,10 +137,7 @@ $().ready(()=>
       $('#carrot3').toggleClass("rotated", 300)
     })
 
-    $('.files').click((evt)=>
-    {
-        console.log("Files clicked")
-    })
+
 
     $('#swapper').click((evt)=>
     {
@@ -169,8 +173,9 @@ $().ready(()=>
     })
     $('.files').click((evt)=>
     {
-        $('#fileTable').css("display", "flex");
-        $('#courseContent').toggle(400);
+        $('#oneDrive').trigger("click")
+        // $('#fileTable').css("display", "flex");
+        // $('#courseContent').toggle(400);
     })
 
     $('.videos').click((evt)=>

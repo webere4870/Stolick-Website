@@ -473,6 +473,7 @@ body
     flex-wrap: wrap;
     gap: 60px;
     padding: 30px 0;
+    position: relative;
 }
 
 .messageBlock
@@ -686,9 +687,27 @@ body
     position: relative;
 }
 
+#bottomer h1
+{
+    color: var(--accent1);
+}
+
+.courseRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.oneDrive
+{
+    margin-right: -180px;
+}
+
 #ethicsTop
 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -716,10 +735,31 @@ body
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
-    bottom: 0;
-    z-index: 2;
+    bottom: 100%;
+    z-index: 1;
+}
+
+.slideBlock{
+    z-index: 100;
+}
+
+.slideBlock button{
+    z-index: 1000;
+}
+
+#bigBlue
+{
+    display: none;
+    background: linear-gradient(var(--accent1), var(--accentGradient));
+    height: 100vh;
+    width: 100vw;
+}
+
+.doubleHeight
+{
+    height: 200vh;
 }
 
 .mover{
@@ -795,12 +835,12 @@ body
 #towerRow
 {
     position: absolute;
-    bottom: 50px;
+    top: -50px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 30;
     gap: 10px;
 }
 
@@ -1904,7 +1944,7 @@ color: #545d7a;
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px ); */
     border-radius: 10px;
-    z-index: 1;
+    z-index: 5;
 }
 
 #topper svg{
