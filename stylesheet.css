@@ -474,6 +474,18 @@ body
     gap: 60px;
     padding: 30px 0;
     position: relative;
+    transition: all .3s linear;
+}
+
+.gradientStretch
+{
+    transform: translateY(-180px);
+    transition: all .1s linear;
+}
+
+.gradientDown
+{
+    transform: translateY(-150px);
 }
 
 .messageBlock
@@ -707,18 +719,18 @@ body
 
 #ethicsTop
 {
-    min-height: 100vh;
+    min-height: 200vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background: radial-gradient(rgba(0,0,0,.4), var(--mainBackground)), url('./images/study.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    flex-direction: column;
+    background: white;
     z-index: 1;
     position: relative;
 }
+
+
 
 #biggerBoy
 {

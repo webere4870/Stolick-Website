@@ -32,7 +32,15 @@ $().ready(()=>
     $('.homePillBtn').click((evt)=>
     {
         console.log("djsa")
-        $('#svgWrap svg').animate({height: "180vh"}, 500).animate({height: "160vh"}, 250)
+        $("#gradientFollow").toggleClass("gradientStretch")
+        setTimeout(()=>
+        {
+            $("#gradientFollow").toggleClass("gradientDown")
+        }, 300)
+        $("#gradientFollow .colFlex").toggle(500)
+        $("body").css("height", "100vh")
+        $("body").css("overflow", "hidden")
+        $(window).scrollTo(0)
     })
 
     $('#su1').click((evt)=>
@@ -173,7 +181,6 @@ $().ready(()=>
     })
     $('.files').click((evt)=>
     {
-        $('#oneDrive').trigger("click")
         // $('#fileTable').css("display", "flex");
         // $('#courseContent').toggle(400);
     })
