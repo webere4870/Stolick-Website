@@ -1,6 +1,5 @@
 $().ready(()=>
 {
-
     function scaleTower()
     {
         let id = $('.mover:nth-of-type(3)').attr("id")
@@ -29,18 +28,20 @@ $().ready(()=>
     <button class="homePillBtn" style="box-shadow: 0 0 10px gray; margin-left: 0;" >Read More</button>
 </div>`
 
-    $('.homePillBtn').click((evt)=>
+    $('#biggerBoy').on('click', "button",(evt)=>
     {
-        console.log("djsa")
+        /*console.log("djsa")
         $("#gradientFollow").toggleClass("gradientStretch")
         setTimeout(()=>
         {
+            $("#gradientFollow").css("transition", "all .25s linear")
             $("#gradientFollow").toggleClass("gradientDown")
-        }, 300)
+            
+        }, 400)
         $("#gradientFollow .colFlex").toggle(500)
         $("body").css("height", "100vh")
         $("body").css("overflow", "hidden")
-        $(window).scrollTo(0)
+        $("#closer").toggle(250)*/
     })
 
     $('#su1').click((evt)=>
@@ -74,8 +75,6 @@ $().ready(()=>
     $('#clickerLeft').click((evt)=>
     {
         $('#biggerBoy').prepend(lastRemoved)
-        $('.ssContainer > *').removeClass("transformed")
-        $('.ssContainer > *').toggleClass("transformed")
         lastRemoved = $('.mover:last-of-type')
         $('.mover:last-of-type').remove()
         scaleTower()
@@ -83,10 +82,11 @@ $().ready(()=>
     $('#clicker').click((evt)=>
     {
         let temp = $('.mover:nth-of-type(1)')
+        lastRemoved = temp
         $('.mover:nth-of-type(1)').remove()
         $('#biggerBoy').append(lastRemoved)
         scaleTower()
-        lastRemoved = temp
+        
     })
 
     $('.hamburger').on('click',(evt)=>
@@ -99,6 +99,11 @@ $().ready(()=>
     $('.cancelForm').click((evt)=>
     {
         $('.formCover').toggle(500)
+    })
+
+    $('.homePillBtn').click((evt)=>
+    {
+        console.log("Hello")
     })
 
     $('.openForm').click((evt)=>
@@ -124,12 +129,12 @@ $().ready(()=>
         $('.courses').toggle(400)
     })
 
-    $('#work').click((evt)=>
-    {
-      evt.preventDefault()
-      $("#dd1").toggle(300)
-      $('#carrot').toggleClass("rotated", 300)
-    })
+    // $('#work').click((evt)=>
+    // {
+    //   evt.preventDefault()
+    //   $("#dd1").toggle(300)
+    //   $('#carrot').toggleClass("rotated", 300)
+    // })
 
     $('#about').click((evt)=>
     {
@@ -201,7 +206,7 @@ $().ready(()=>
         })
     })
 
-    $('.uniqueSquare').click((evt)=>
+    /*$('.uniqueSquare').click((evt)=>
     {
         console.log("here")
         $(evt.currentTarget).parents('.articleCard').siblings().slideToggle(1000)
@@ -209,7 +214,7 @@ $().ready(()=>
         {
             $(evt.currentTarget).parents('.articleCard').attr("id", "fullPageCard")
         }, 1200)
-    })
+    })*/
 
     $('.backBtn2').click((evt)=>
     {

@@ -474,18 +474,59 @@ body
     gap: 60px;
     padding: 30px 0;
     position: relative;
-    transition: all .3s linear;
+    transition: all .4s linear;
 }
-
+.ocean { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:100%;
+    left:0;
+    background: var(--accent1);
+  }
+  
+  .wave {
+    background: url('/images/wave.svg') repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
 .gradientStretch
 {
-    transform: translateY(-180px);
-    transition: all .1s linear;
+    width: 150%;
+    transform: translateY(-500px) scale(150%) rotate(-5deg);
 }
 
 .gradientDown
 {
-    transform: translateY(-150px);
+    transform: translateY(-350px) rotate(5deg);
 }
 
 .messageBlock
@@ -753,6 +794,13 @@ body
     z-index: 1;
 }
 
+#closer
+{
+    position: absolute;
+    top: 40%;
+    left: 10px;
+}
+
 .slideBlock{
     z-index: 100;
 }
@@ -790,12 +838,6 @@ body
     font-size: 16px;
 }
 
-
-.mover > *
-{
-    transition: all .3s linear;
-    transform: translateY(200px);
-}
 
 .mover:nth-of-type(1)
 {
@@ -987,11 +1029,13 @@ body
 {
     position: absolute;
     right: 30px;
+    top: calc(25% - 50px);
 }
 
 #clickerLeft{
     position: absolute;
     left: 30px;
+    top: calc(25% - 50px);
 }
 
 
@@ -1260,7 +1304,7 @@ justify-content: center;
 gap: 40px;
 flex-wrap: wrap;
 }
-#sb1,#sb2,#sb3,#sb4,#sb5,#sb6{
+#sb1,#sb2,#sb3,#sb4,#sb5,#sb6, #sb7, #sb8, #sb9, #sb10, #sb11, #sb12{
     align-self: center;
 }
 .container2 .squareBtn{
@@ -1273,30 +1317,30 @@ flex-wrap: wrap;
     cursor: pointer;
 }
 
-#sb1
+#sb1, #sb7, #sb13
 {
     background-color: #47bcd4;
 }
 
-#sb2
+#sb2, #sb8, #sb14
 {
     background-color: #5e76bf;
 }
 
-#sb3
+#sb3, #sb9
 {
     background-color: #cd5b9f;
 }
 
-#sb4
+#sb4, #sb10
 {
     background-color: rgb(129, 174, 129);
 }
-#sb5
+#sb5, #sb11
 {
     background-color: rgb(139, 209, 187);
 }
-#sb6
+#sb6, #sb12
 {
     background-color: rgb(238, 167, 167);
 }
