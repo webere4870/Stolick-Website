@@ -3194,9 +3194,8 @@ a
 {
     #homeFollow
     {
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
-        padding-top: 25%;
     }
     .underQuote p{
         width: 90%;
@@ -3209,7 +3208,7 @@ a
     {
         height: 600px;
         width: 600px;
-        bottom: -500px;
+        bottom: -450px;
         right: -100px;
     }
     #innerCircle img{
@@ -3365,9 +3364,11 @@ a
     }
 }
 
-@media screen and (max-width: 501px)
+@media screen and (max-width: 500px)
 {
     #innerCircle img{
         left: 30%;
+        height: 70%;
+        top: -50%;
     }
 }
