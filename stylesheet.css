@@ -62,7 +62,7 @@ body
 
 #homeFollow
 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: linear-gradient(var(--accent1),var(--accentGradient));
     display: flex;
@@ -3208,7 +3208,7 @@ a
     {
         height: 600px;
         width: 600px;
-        bottom: -450px;
+        bottom: -500px;
         right: -100px;
     }
     #innerCircle img{
@@ -3366,9 +3366,19 @@ a
 
 @media screen and (max-width: 500px)
 {
+    #centerCircle
+    {
+        height: 700px;
+        width: 700px;
+    }
     #innerCircle img{
         left: 30%;
         height: 70%;
         top: -50%;
+    }
+
+    #homeRow
+    {
+        margin-top: -25%;
     }
 }
