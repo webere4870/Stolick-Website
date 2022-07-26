@@ -790,7 +790,7 @@ body
     width: 100vw;
     min-height: 100vh;
     position: absolute;
-    bottom: 100%;
+    bottom: 0;
     z-index: 1;
 }
 
