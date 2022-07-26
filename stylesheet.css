@@ -2188,8 +2188,8 @@ a
 
 .hamburger
 {
-    height: 45px;
-    width: 45px;
+    height: 65px;
+    width: 65px;
     background: white;
     border-radius: 50%;
     display: none;
@@ -3380,6 +3380,6 @@ a
 
     #homeRow
     {
-        margin-top: -35%;
+        margin-top: -50%;
     }
 }
