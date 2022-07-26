@@ -760,7 +760,7 @@ body
 
 #ethicsTop
 {
-    min-height: 200vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -803,6 +803,10 @@ body
 
 .slideBlock{
     z-index: 100;
+}
+
+.slideBlock .rowFlex{
+    justify-content: flex-start;
 }
 
 .slideBlock button{
@@ -948,13 +952,15 @@ body
 {
     height: fit-content;
     width: fit-content;
-    background: rgba(0,0,0,.6);
-    border-radius: 5px;
-    padding: 40px 20px;
+    background: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all .3s linear;
+    box-shadow: 0 0 10px gray;
 }
 .slideClick:hover{
     background: black;
@@ -1029,13 +1035,13 @@ body
 {
     position: absolute;
     right: 30px;
-    top: calc(25% - 50px);
+    top: calc(50% - 50px);
 }
 
 #clickerLeft{
     position: absolute;
     left: 30px;
-    top: calc(25% - 50px);
+    top: calc(50% - 50px);
 }
 
 
@@ -3366,6 +3372,34 @@ a
 
 @media screen and (max-width: 500px)
 {
+    #clicker
+    {
+        right: 10px;
+    }
+
+    #clickerLeft
+    {
+        left: 10px;
+    }
+    
+    .mover 
+    {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    .slideBlock
+    {
+        width: 80%;
+    }
+    .slideBlock .rowFlex
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .mover *{
+        text-align: center;
+    }
     #centerCircle
     {
         height: 700px;
