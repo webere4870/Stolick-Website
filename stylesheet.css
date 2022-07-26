@@ -3208,7 +3208,7 @@ a
     {
         height: 600px;
         width: 600px;
-        bottom: -500px;
+        bottom: -450px;
         right: -100px;
     }
     #innerCircle img{
@@ -3380,6 +3380,6 @@ a
 
     #homeRow
     {
-        margin-top: -25%;
+        margin-top: -35%;
     }
 }
