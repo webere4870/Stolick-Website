@@ -3370,11 +3370,12 @@ a
     {
         height: 700px;
         width: 700px;
+        right: -170px;
     }
     #innerCircle img{
-        left: 30%;
+        left: 20%;
         height: 70%;
-        top: -50%;
+        top: -40%;
     }
 
     #homeRow
