@@ -466,7 +466,7 @@ body
 #gradientFollow{
     min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(var(--accent1), var(--accentGradient));
+    background: linear-gradient(var(--accent1), #AE10F2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -781,7 +781,7 @@ body
 #biggerBoy
 {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: relative;
     transition: all .3s linear;
     overflow: hidden;
@@ -793,7 +793,7 @@ body
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
-    min-height: 100vh;
+    height: 100%;
     position: absolute;
     bottom: 0;
     z-index: 12;
@@ -3203,6 +3203,14 @@ a
 
 @media screen and (max-width: 768px)
 {
+    #ethicsTop
+    {
+        min-height: 90vh;
+    }
+    #biggerBoy
+    {
+        height:90vh;
+    }
     #hider
     {
         display: inherit;
