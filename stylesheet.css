@@ -758,6 +758,11 @@ body
     margin-right: -180px;
 }
 
+#hider
+{
+    display: none;
+}
+
 #ethicsTop
 {
     min-height: 100vh;
@@ -791,7 +796,7 @@ body
     min-height: 100vh;
     position: absolute;
     bottom: 0;
-    z-index: 1;
+    z-index: 12;
 }
 
 #closer
@@ -3198,6 +3203,14 @@ a
 
 @media screen and (max-width: 768px)
 {
+    #hider
+    {
+        display: inherit;
+    }
+    #wave
+    {
+        display: none;
+    }
     #homeFollow
     {
         justify-content: center;
