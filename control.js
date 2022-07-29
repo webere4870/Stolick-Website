@@ -81,10 +81,10 @@ $().ready(()=>
     })
     $('#clicker').click((evt)=>
     {
+        $('#biggerBoy').append(lastRemoved)
         let temp = $('.mover:nth-of-type(1)')
         lastRemoved = temp
         $('.mover:nth-of-type(1)').remove()
-        $('#biggerBoy').append(lastRemoved)
         scaleTower()
         
     })

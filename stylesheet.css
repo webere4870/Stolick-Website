@@ -1041,12 +1041,14 @@ body
     position: absolute;
     right: 30px;
     top: calc(50% - 50px);
+    z-index: 50;
 }
 
 #clickerLeft{
     position: absolute;
     left: 30px;
     top: calc(50% - 50px);
+    z-index: 50;
 }
 
 
@@ -1814,8 +1816,14 @@ color: #545d7a;
     transition-timing-function: linear;
     transition-duration: .4s;
     transition-property: all;
+    background: white;
 }
-
+.courseItem h1{
+    color: black;
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
 .courseItem:hover
 {
     box-shadow: 0 0 15px gray;
@@ -1965,8 +1973,9 @@ color: #545d7a;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 70px;
     width: 100%;
+    transform: translateY(-100px);
 }
 
 .innerSlide
@@ -3411,7 +3420,10 @@ a
     }
     .slideBlock
     {
-        width: 80%;
+        width: 70%;
+    }
+    .slideBlock h1{
+        font-size: 50px;
     }
     .slideBlock .rowFlex
     {
