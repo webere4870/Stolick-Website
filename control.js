@@ -1,5 +1,23 @@
 $().ready(()=>
 {
+
+    
+    if(window.innerWidth <= 500)
+    {
+        let height = window.innerHeight
+        $('.mobileResize').css("height", height + "px")
+    }
+
+    addEventListener('resize', (event) => 
+    {
+        console.log("resized")
+        if(window.innerWidth <= 500)
+        {
+            let height = window.innerHeight
+            $('.mobileResize').css("height", height + "px")
+        }
+    })
+
     function scaleTower()
     {
         let id = $('.mover:nth-of-type(3)').attr("id")

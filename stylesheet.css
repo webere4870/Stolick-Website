@@ -3237,10 +3237,7 @@ a
 
 @media screen and (max-width: 768px)
 {
-    #ethicsTop
-    {
-        min-height: 90vh;
-    }
+    
     #biggerBoy
     {
         height:90vh;
@@ -3427,6 +3424,10 @@ a
 
 @media screen and (max-width: 500px)
 {
+    #progressContainer
+    {
+        bottom: 140px;
+    }
     .container{
         width: 85%;
     }
