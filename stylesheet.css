@@ -27,6 +27,7 @@
     --custom3: #89cff0;
     --custom3Light: #89cff06f;
     --yellow: rgb(242, 235, 31);
+    --mobileHeight: 0px;
 }
 
 
@@ -3424,6 +3425,10 @@ a
 
 @media screen and (max-width: 500px)
 {
+    #ethicsTop
+    {
+        height: var(--mobileHeight);
+    }
     #progressContainer
     {
         bottom: 140px;

@@ -1,22 +1,22 @@
-$().ready(()=>
+let root = document.documentElement;
+if(window.innerWidth <= 500)
 {
+    let height = window.innerHeight
+    root.style.setProperty('--mobileHeight', height + "px");
+}
 
-    
+addEventListener('resize', (event) => 
+{
+    console.log("resized")
     if(window.innerWidth <= 500)
     {
         let height = window.innerHeight
-        $('.mobileResize').css("height", height + "px")
+        root.style.setProperty('--mobileHeight', height + "px");
     }
+})
 
-    addEventListener('resize', (event) => 
-    {
-        console.log("resized")
-        if(window.innerWidth <= 500)
-        {
-            let height = window.innerHeight
-            $('.mobileResize').css("height", height + "px")
-        }
-    })
+$().ready(()=>
+{
 
     function scaleTower()
     {
