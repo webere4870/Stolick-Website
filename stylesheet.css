@@ -2244,7 +2244,7 @@ a
     position: fixed;
     top: 15px;
     right: 15px;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px gray;
     z-index: 10;
     transition-property: all;
     transition-timing-function: linear;
@@ -2254,7 +2254,7 @@ a
 .hamburger:hover
 {
     cursor: pointer;
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px gray;
 }
 
 .navigation a{
