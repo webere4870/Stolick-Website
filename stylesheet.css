@@ -51,7 +51,7 @@ body
 
 #homePage
 {
-    background: linear-gradient(var(--accentGradient),var(--accent1));
+    background: white;
     clip-path: polygon(0% 50%, 100% 70%, 100% 100%, 0% 100%);
     min-height: 100vh;
     width: 100vw;
@@ -259,8 +259,8 @@ body
     background: white;
     min-height: 30vh;
     width: 100vw;
+    box-shadow: 0 0 15px gray;
 
-    transform: translateY(-20px);
 }
 
 #unpublishedPage
@@ -1344,8 +1344,8 @@ body
     content: 'Matthew Stolick';
     font-weight: bold;
     position: absolute;
-    bottom: 110%;
-    color: var(--accent1);
+    bottom: 115%;
+    color: white;
     text-align: center;
     width: 100%;
     font-size: 40px;
@@ -1355,8 +1355,8 @@ body
 {
     content: '--Scholar, Professor, Author--';
     position: absolute;
-    bottom: 100%;
-    color: gray;
+    bottom: 105%;
+    color: white;
     text-align: center;
     width: 100%;
     font-size: 20px;
@@ -1728,6 +1728,11 @@ color: #545d7a;
     color: black;
 }
 
+#followPage
+{
+    background: white;
+}
+
 .colorStrip
 {
     background: var(--lightBackground);
@@ -1939,9 +1944,12 @@ color: #545d7a;
     display: flex;
 }
 
-.homePillBtn:hover
+
+
+.mover a:hover .homePillBtn
 {
     cursor: pointer;
+    box-shadow: 0 0 30px gray;
 }
 
 .coursePillBtn:hover{
@@ -3430,10 +3438,7 @@ a
 @media screen and (max-width: 768px)
 {
     
-    #biggerBoy
-    {
-        height:90vh;
-    }
+    
     #hider
     {
         display: inherit;
@@ -3618,7 +3623,11 @@ a
 {
     #ethicsTop
     {
-        height: var(--mobileHeight);
+        min-height:80vh;
+    }
+    .mover
+    {
+        height: 80vh;
     }
     #progressContainer
     {
