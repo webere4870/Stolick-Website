@@ -1913,6 +1913,11 @@ color: #545d7a;
     background: var(--custom3);
 }
 
+#cpb4
+{
+    background: rgba(128, 0, 128, 0.797);
+}
+
 .courseBubble
 {
     height: 125px;
@@ -1931,6 +1936,11 @@ color: #545d7a;
 #cb3
 {
     background: var(--custom3Light);
+}
+
+#cb4
+{
+    background: rgba(128, 0, 128, 0.498);
 }
 
 .courseItem h1{
@@ -1969,6 +1979,17 @@ color: #545d7a;
     background: var(--custom3);
 }
 
+.courseItem:nth-of-type(4) h1::after
+{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background: var(--custom3);
+    background: rgba(128, 0, 128, 0.797);
+}
 
 .course:hover{
     box-shadow: 0 0 20px gray;
@@ -1999,7 +2020,7 @@ color: #545d7a;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 50px;
     width: 100%;
     transform: translateY(-100px);
 }
@@ -2864,6 +2885,19 @@ a
     max-width: 50%;
 }
 
+.progressSide .pillBtn{
+    margin: 15px 0;
+}
+
+.progressSide a{
+    z-index: 3;
+}
+
+.progressSide .pillBtn:hover
+{
+    cursor: pointer;
+}
+
 .progressSide p
 {
     color: black;
@@ -2892,7 +2926,7 @@ a
 
 #su1::after
 {
-    content: 'Hey ';
+    content: 'Do & Learn';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -2901,7 +2935,7 @@ a
 
 #su2::after
 {
-    content: 'Hey buddy';
+    content: 'Socratic Method';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -2910,7 +2944,7 @@ a
 
 #su3::after
 {
-    content: 'Hey ';
+    content: 'Blooms Taxonomy';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -2919,7 +2953,7 @@ a
 
 #su4::after
 {
-    content: 'Hey ';
+    content: 'Experiential Learning';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -3070,6 +3104,7 @@ a
     font-family: 'DM Sans', sans-serif;
     color: var(--accent1);
     font-size: 60px;
+    text-align: center;
 }
 
 
