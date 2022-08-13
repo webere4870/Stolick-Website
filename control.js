@@ -49,6 +49,12 @@ $().ready(()=>
     // {
     //     sendEmail()
     // })
+
+    $('.btn1').click((evt)=>
+    {
+        console.log("Hey")
+        $('#trueContact').submit()
+    })
     function scaleTower()
     {
         let id = $('.mover:nth-of-type(3)').attr("id")
