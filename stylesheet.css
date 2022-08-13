@@ -2055,6 +2055,7 @@ color: #545d7a;
     font-weight: 800;
     font-size: 14px;
     margin: 0 8px;
+    box-shadow: 0 0 5px gray;
 }
 
 .homePills
@@ -2062,7 +2063,10 @@ color: #545d7a;
     display: flex;
 }
 
-
+.homePillBtn:hover{
+    cursor: pointer;
+    box-shadow: 10px gray;
+}
 
 .mover a:hover .homePillBtn
 {
@@ -3101,7 +3105,7 @@ a
 
 #su1::after
 {
-    content: 'Do & Learn';
+    content: 'One Student';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -3110,7 +3114,7 @@ a
 
 #su2::after
 {
-    content: 'Socratic Method';
+    content: 'Connecting';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -3119,7 +3123,7 @@ a
 
 #su3::after
 {
-    content: 'Blooms Taxonomy';
+    content: 'Syllabi';
     color: var(--accent1);
     position: absolute;
     top: 120%;
@@ -3128,7 +3132,7 @@ a
 
 #su4::after
 {
-    content: 'Experiential Learning';
+    content: 'Assertive Teaching';
     color: var(--accent1);
     position: absolute;
     top: 120%;

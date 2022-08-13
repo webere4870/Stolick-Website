@@ -15,9 +15,40 @@ addEventListener('resize', (event) =>
     }
 })
 
+async function sendEmail()
+{
+    let response = await fetch("https://mandrillapp.com/api/1.0/messages/send.json",
+    {
+        headers: {'Content-Type': 'application/json'},
+        method: 'POST',
+        body: JSON.stringify({
+            'key': '12f2ac8905b188da52697163f2ccfe7f-us18',
+            'message': {
+            'from_email': 'eliweber2001@gmail.com',
+            'to': [
+                {
+                    'email': 'webere1@findlay.edu',
+                    'name': 'Elijah Weber',
+                    'type': 'to'
+                }
+                ],
+            'autotext': 'true',
+            'subject': 'Test me',
+            'html': 'I will be shocked if this worked.'
+            }
+        })
+    })
+
+    let json = await response.json()
+    console.log(json)
+}
+
 $().ready(()=>
 {
-
+    // $('.submitBtn').click((evt)=>
+    // {
+    //     sendEmail()
+    // })
     function scaleTower()
     {
         let id = $('.mover:nth-of-type(3)').attr("id")
