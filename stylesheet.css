@@ -1785,7 +1785,13 @@ font-size: 13px;
 }
 .user {
 display: flex;
-margin-top: auto;
+margin-top: 20px;
+justify-content: center;
+align-items: center;
+}
+.user h5{
+    color: black;
+    font-weight: lighter;
 }
 
 .user img {
@@ -3391,6 +3397,47 @@ a
     cursor: pointer;
 }
 
+.modifiedForm
+{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#bigBubble
+{
+    height: 60vw;
+    width: 60vw;
+    border-radius: 50%;
+    background: var(--accent1);
+    position: absolute;
+    bottom: -35vw;
+    left: -2vw;
+    box-shadow: 0 0 35px gray;
+    z-index: 1;
+}
+
+
+
+#smallBubble
+{
+    height: 60vw;
+    width: 60vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -35vw;
+    background: rgba(128, 128, 128, 0.427);
+    right: -5vw;
+}
+
 .formCover
 {
     position: fixed;
@@ -3410,7 +3457,7 @@ a
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
@@ -3445,7 +3492,6 @@ a
 }
 
 
-
 .coursePage
 {
     background: white;
@@ -3465,6 +3511,7 @@ a
 
 .contactForm label{
     transform: translateY(10px);
+    color: var(--accent1);
 }
 
 
@@ -3475,6 +3522,7 @@ a
 .contactForm input, .contactForm textarea
 {
     width: 300px;
+    box-shadow: 0 0 5px gray;
 }
 
 .contactForm label{
@@ -3549,6 +3597,11 @@ a
 
 @media screen and (max-width: 768px)
 {
+    #smallBubble, #bigBubble
+    {
+        height: 75vw;
+        width: 75vw;
+    }
     .branch{
         width: 150px;
     }
@@ -3747,6 +3800,29 @@ a
 
 @media screen and (max-width: 500px)
 {
+    .form
+    {
+        width: 90vw;
+        padding: 15px 15px;
+    }
+    .contactForm input, .contactForm textarea
+    {
+        width:100%;
+        box-shadow: 0 0 5px gray;
+    }
+    #bigBubble, #smallBubble
+    {
+        height: 85vw;
+        width: 85vw;
+    }
+    #bigBubble
+    {
+        left: -10vw;
+    }
+    #smallBubble
+    {
+        right: -10vw;
+    }
     #ethicsTop
     {
         min-height:80vh;
