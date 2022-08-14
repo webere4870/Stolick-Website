@@ -77,9 +77,9 @@ $().ready(()=>
             <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
             <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
           </svg>
-        <p style="margin-left: 8px;">N/A</p>
+        <p style="margin-left: 8px;">University of Findlay</p>
     </div>
-    <h1 class="homeLetters2">Misc. Ethics Bowl Info</h1>
+    <h1 class="homeLetters2">Past Events</h1>
                     <a target="_blank" href="https://ufindlay-my.sharepoint.com/:f:/g/personal/ms1138_findlay_edu/EgJu-oNqdhtEkH_QEi-dGSEBzayqCYt39wJm39X7JPJ3Uw?e=5%3afkJmUZ&at=9"><button class="homePillBtn" style="box-shadow: 0 0 10px gray; margin-left: 0;" >Read More</button></a>
 </div>`
 
